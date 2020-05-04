@@ -2,6 +2,11 @@
 
 ## pre 1.0
 
+### 0.5.0
+
+* Added ip whitelist functionality to the Service
+* Fixed authorized keys for users
+
 ### 0.4.0
 
 * Added authorized keys to users
