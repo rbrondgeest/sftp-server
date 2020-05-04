@@ -53,7 +53,7 @@ The following table lists the configurable parameters of the SFTP server chart a
 | `service.type`                     | Type of exposed Service                    | `ClusterIP`                                 |
 | `service.port`                     | Port to expose Service                     | `22`                                        |
 | `service.loadBalancer.ip`          | Public IP to for loadbalancer              | `""`                                        |
-| `service.loadBalancer.whitelist`   | IP Whitelist for loadbalancer ingress      | `[]`                                        |
+| `service.loadBalancer.whitelist`   | CIDR Whitelist for loadbalancer/firewall   | `[0.0.0.0/0]`                                        |
 | `sftpConfig.users`                 | SFTP users  (See table below)              | `[]`                                        |
 | `sftpConfig.hostKeys.secret`       | name of secret for SSH host keys           | `""`                                        |
 | `sftpConfig.hostKeys.keys`         | list of items to be used from secret       | `{}`                                        |
